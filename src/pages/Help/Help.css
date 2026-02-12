@@ -1,0 +1,151 @@
+.help-page {
+    min-height: 80vh;
+    background: #fff;
+}
+
+.help-page__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+.help-page__hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.help-page__hero h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #3d4152;
+    margin: 0 0 8px;
+}
+
+.help-page__hero p {
+    font-size: 16px;
+    color: #686b78;
+}
+
+.help-page__contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 48px;
+}
+
+.help-page__contact-card {
+    background: #f8f8fb;
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.help-page__contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.help-page__contact-icon {
+    font-size: 32px;
+    color: #FC8019;
+    margin-bottom: 12px;
+}
+
+.help-page__contact-card h3 {
+    font-size: 18px;
+    color: #3d4152;
+    margin: 0 0 6px;
+}
+
+.help-page__contact-card p {
+    font-size: 13px;
+    color: #93959f;
+    margin: 0 0 12px;
+}
+
+.help-page__contact-card a,
+.help-page__contact-card button {
+    color: #FC8019;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.help-page__faq {
+    padding-bottom: 40px;
+}
+
+.help-page__faq h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3d4152;
+    margin: 0 0 24px;
+}
+
+.help-page__faq-item {
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.help-page__faq-item.open {
+    border-color: #FC8019;
+}
+
+.help-page__faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3d4152;
+}
+
+.help-page__faq-question svg {
+    font-size: 18px;
+    color: #93959f;
+    flex-shrink: 0;
+}
+
+.help-page__faq-answer {
+    padding: 0 20px 18px;
+    animation: fadeIn 0.2s ease;
+}
+
+.help-page__faq-answer p {
+    font-size: 14px;
+    color: #686b78;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .help-page__contact-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .help-page__hero h1 {
+        font-size: 24px;
+    }
+}

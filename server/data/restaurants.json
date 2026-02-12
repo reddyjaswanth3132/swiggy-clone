@@ -1,0 +1,2867 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Koramangala",
+        "address": "Koramangala, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9337,
+        "longitude": 77.6277,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 2,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Indiranagar",
+        "address": "Indiranagar, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9793,
+        "longitude": 77.6368,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 3,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "HSR Layout",
+        "address": "HSR Layout, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9092,
+        "longitude": 77.6516,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 4,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "BTM Layout",
+        "address": "BTM Layout, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9209,
+        "longitude": 77.6068,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 5,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Whitefield",
+        "address": "Whitefield, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9653,
+        "longitude": 77.7523,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 6,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "JP Nagar",
+        "address": "JP Nagar, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.887,
+        "longitude": 77.5885,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 7,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Jayanagar",
+        "address": "Jayanagar, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9297,
+        "longitude": 77.59,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 8,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Electronic City",
+        "address": "Electronic City, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.8351,
+        "longitude": 77.6735,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 9,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "MG Road",
+        "address": "MG Road, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9713,
+        "longitude": 77.607,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 10,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Marathahalli",
+        "address": "Marathahalli, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9543,
+        "longitude": 77.6989,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 11,
+        "name": "Meghana Foods",
+        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Biryani",
+            "Andhra",
+            "South Indian"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "25-30",
+        "costForTwo": 500,
+        "offers": [
+            "Flat ₹125 OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Koramangala",
+        "address": "Koramangala, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9303,
+        "longitude": 77.6216,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 12,
+        "name": "Truffles",
+        "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&h=400&fit=crop",
+        "cuisines": [
+            "American",
+            "Burgers",
+            "Desserts"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "30-35",
+        "costForTwo": 600,
+        "offers": [
+            "Flat 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Indiranagar",
+        "address": "Indiranagar, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.977,
+        "longitude": 77.6437,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 13,
+        "name": "Leons Grill",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop",
+        "cuisines": [
+            "American",
+            "Grill",
+            "Fast Food"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "25-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "HSR Layout",
+        "address": "HSR Layout, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9129,
+        "longitude": 77.6451,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 14,
+        "name": "Vidyarthi Bhavan",
+        "image": "https://images.unsplash.com/photo-1668236543090-82eb5eace6fc?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "Dosa",
+            "Snacks"
+        ],
+        "rating": 4.7,
+        "deliveryTime": "20-30",
+        "costForTwo": 150,
+        "offers": [
+            "Pure Veg Delights",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "BTM Layout",
+        "address": "BTM Layout, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9179,
+        "longitude": 77.6125,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 15,
+        "name": "Nandhana Palace",
+        "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Andhra",
+            "Biryani",
+            "South Indian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "₹50 OFF above ₹299",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Whitefield",
+        "address": "Whitefield, Bangalore",
+        "city": "Bangalore",
+        "latitude": 12.9745,
+        "longitude": 77.755,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 16,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Andheri West",
+        "address": "Andheri West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1318,
+        "longitude": 72.8305,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 17,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Bandra West",
+        "address": "Bandra West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.0624,
+        "longitude": 72.8326,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 18,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Lower Parel",
+        "address": "Lower Parel, Mumbai",
+        "city": "Mumbai",
+        "latitude": 18.993,
+        "longitude": 72.8359,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 19,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Powai",
+        "address": "Powai, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1181,
+        "longitude": 72.9094,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 20,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Malad West",
+        "address": "Malad West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1857,
+        "longitude": 72.8513,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 21,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Dadar",
+        "address": "Dadar, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.0192,
+        "longitude": 72.8431,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 22,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Goregaon East",
+        "address": "Goregaon East, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1621,
+        "longitude": 72.8525,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 23,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Thane West",
+        "address": "Thane West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.2184,
+        "longitude": 72.9777,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 24,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Juhu",
+        "address": "Juhu, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.0886,
+        "longitude": 72.8234,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 25,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Colaba",
+        "address": "Colaba, Mumbai",
+        "city": "Mumbai",
+        "latitude": 18.9063,
+        "longitude": 72.8176,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 26,
+        "name": "Bademiya",
+        "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mughlai",
+            "Kebabs",
+            "North Indian"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 500,
+        "offers": [
+            "Free delivery",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Andheri West",
+        "address": "Andheri West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1381,
+        "longitude": 72.8315,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 27,
+        "name": "Leopold Cafe",
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Continental",
+            "Cafe",
+            "American"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 800,
+        "offers": [
+            "10% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Bandra West",
+        "address": "Bandra West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.0568,
+        "longitude": 72.8274,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 28,
+        "name": "Swati Snacks",
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Street Food",
+            "Gujarati",
+            "Snacks"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "25-35",
+        "costForTwo": 350,
+        "offers": [
+            "Free delivery above ₹199",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Lower Parel",
+        "address": "Lower Parel, Mumbai",
+        "city": "Mumbai",
+        "latitude": 18.9939,
+        "longitude": 72.8327,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 29,
+        "name": "Britannia & Co",
+        "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Parsi",
+            "Iranian",
+            "North Indian"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "20-30",
+        "costForTwo": 600,
+        "offers": [
+            "Legendary since 1923",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Powai",
+        "address": "Powai, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1224,
+        "longitude": 72.9072,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 30,
+        "name": "Theobroma",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Bakery",
+            "Desserts",
+            "Cafe"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "15-25",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF on cakes",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Malad West",
+        "address": "Malad West, Mumbai",
+        "city": "Mumbai",
+        "latitude": 19.1892,
+        "longitude": 72.846,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 31,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Connaught Place",
+        "address": "Connaught Place, Delhi",
+        "city": "Delhi",
+        "latitude": 28.6287,
+        "longitude": 77.2205,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 32,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Saket",
+        "address": "Saket, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5206,
+        "longitude": 77.2041,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 33,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Hauz Khas",
+        "address": "Hauz Khas, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5477,
+        "longitude": 77.2001,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 34,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Rajouri Garden",
+        "address": "Rajouri Garden, Delhi",
+        "city": "Delhi",
+        "latitude": 28.6509,
+        "longitude": 77.12,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 35,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Lajpat Nagar",
+        "address": "Lajpat Nagar, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5654,
+        "longitude": 77.2401,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 36,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Dwarka",
+        "address": "Dwarka, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5971,
+        "longitude": 77.0425,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 37,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Karol Bagh",
+        "address": "Karol Bagh, Delhi",
+        "city": "Delhi",
+        "latitude": 28.6477,
+        "longitude": 77.1939,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 38,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Nehru Place",
+        "address": "Nehru Place, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5442,
+        "longitude": 77.2525,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 39,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Rohini",
+        "address": "Rohini, Delhi",
+        "city": "Delhi",
+        "latitude": 28.7488,
+        "longitude": 77.052,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 40,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Janakpuri",
+        "address": "Janakpuri, Delhi",
+        "city": "Delhi",
+        "latitude": 28.6265,
+        "longitude": 77.091,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 41,
+        "name": "Paranthe Wali Gali",
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&h=400&fit=crop",
+        "cuisines": [
+            "North Indian",
+            "Street Food",
+            "Paranthas"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "25-30",
+        "costForTwo": 200,
+        "offers": [
+            "Old Delhi Special",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Connaught Place",
+        "address": "Connaught Place, Delhi",
+        "city": "Delhi",
+        "latitude": 28.6311,
+        "longitude": 77.2191,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 42,
+        "name": "Bukhara",
+        "image": "https://images.unsplash.com/photo-1642821373181-696a54913e93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "North Indian",
+            "Tandoor",
+            "Mughlai"
+        ],
+        "rating": 4.8,
+        "deliveryTime": "30-35",
+        "costForTwo": 2500,
+        "offers": [
+            "Premium Dining",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Saket",
+        "address": "Saket, Delhi",
+        "city": "Delhi",
+        "latitude": 28.52,
+        "longitude": 77.207,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 43,
+        "name": "Haldirams",
+        "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&h=400&fit=crop",
+        "cuisines": [
+            "North Indian",
+            "Sweets",
+            "Snacks",
+            "Chinese"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-35",
+        "costForTwo": 300,
+        "offers": [
+            "Flat ₹75 OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Hauz Khas",
+        "address": "Hauz Khas, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5488,
+        "longitude": 77.2034,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 44,
+        "name": "Al Jawahar",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mughlai",
+            "Kebabs",
+            "Biryani"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 400,
+        "offers": [
+            "Free delivery",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Rajouri Garden",
+        "address": "Rajouri Garden, Delhi",
+        "city": "Delhi",
+        "latitude": 28.6416,
+        "longitude": 77.1254,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 45,
+        "name": "Wenger's Deli",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Bakery",
+            "Continental",
+            "Snacks"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "15-25",
+        "costForTwo": 350,
+        "offers": [
+            "15% OFF on pastries",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Lajpat Nagar",
+        "address": "Lajpat Nagar, Delhi",
+        "city": "Delhi",
+        "latitude": 28.5707,
+        "longitude": 77.2412,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 46,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Banjara Hills",
+        "address": "Banjara Hills, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4136,
+        "longitude": 78.4339,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 47,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Jubilee Hills",
+        "address": "Jubilee Hills, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4298,
+        "longitude": 78.4065,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 48,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Madhapur",
+        "address": "Madhapur, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4465,
+        "longitude": 78.3879,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 49,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Gachibowli",
+        "address": "Gachibowli, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4354,
+        "longitude": 78.3471,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 50,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Kukatpally",
+        "address": "Kukatpally, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.485,
+        "longitude": 78.3827,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 51,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Secunderabad",
+        "address": "Secunderabad, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4382,
+        "longitude": 78.4939,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 52,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Ameerpet",
+        "address": "Ameerpet, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4405,
+        "longitude": 78.4444,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 53,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Begumpet",
+        "address": "Begumpet, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4416,
+        "longitude": 78.4705,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 54,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Hitech City",
+        "address": "Hitech City, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4408,
+        "longitude": 78.3773,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 55,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Kondapur",
+        "address": "Kondapur, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4567,
+        "longitude": 78.3535,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 56,
+        "name": "Paradise Biryani",
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Biryani",
+            "North Indian",
+            "Kebabs"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "25-30",
+        "costForTwo": 500,
+        "offers": [
+            "Flat 10% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Banjara Hills",
+        "address": "Banjara Hills, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4198,
+        "longitude": 78.4343,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 57,
+        "name": "Bawarchi",
+        "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Biryani",
+            "Hyderabadi",
+            "Tandoor"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "30-35",
+        "costForTwo": 400,
+        "offers": [
+            "₹80 OFF above ₹399",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Jubilee Hills",
+        "address": "Jubilee Hills, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4277,
+        "longitude": 78.4087,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 58,
+        "name": "Shah Ghouse",
+        "image": "https://images.unsplash.com/photo-1642821373181-696a54913e93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Biryani",
+            "Kebabs",
+            "Mughlai"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "25-35",
+        "costForTwo": 450,
+        "offers": [
+            "Free delivery",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Madhapur",
+        "address": "Madhapur, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4469,
+        "longitude": 78.3874,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 59,
+        "name": "Chutneys",
+        "image": "https://images.unsplash.com/photo-1668236543090-82eb5eace6fc?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "Breakfast",
+            "Dosa"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "20-30",
+        "costForTwo": 250,
+        "offers": [
+            "20% OFF on breakfast",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Gachibowli",
+        "address": "Gachibowli, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4361,
+        "longitude": 78.3527,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 60,
+        "name": "Pista House",
+        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Hyderabadi",
+            "Biryani",
+            "Haleem"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "15-25",
+        "costForTwo": 350,
+        "offers": [
+            "Flat ₹50 OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Kukatpally",
+        "address": "Kukatpally, Hyderabad",
+        "city": "Hyderabad",
+        "latitude": 17.4844,
+        "longitude": 78.3769,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 61,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "T Nagar",
+        "address": "T Nagar, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0379,
+        "longitude": 80.2302,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 62,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Anna Nagar",
+        "address": "Anna Nagar, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0823,
+        "longitude": 80.2145,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 63,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Adyar",
+        "address": "Adyar, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0107,
+        "longitude": 80.2537,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 64,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Velachery",
+        "address": "Velachery, Chennai",
+        "city": "Chennai",
+        "latitude": 12.9854,
+        "longitude": 80.2207,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 65,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Nungambakkam",
+        "address": "Nungambakkam, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0554,
+        "longitude": 80.2465,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 66,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Mylapore",
+        "address": "Mylapore, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0406,
+        "longitude": 80.2647,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 67,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Besant Nagar",
+        "address": "Besant Nagar, Chennai",
+        "city": "Chennai",
+        "latitude": 12.9969,
+        "longitude": 80.2674,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 68,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Porur",
+        "address": "Porur, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0421,
+        "longitude": 80.1542,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 69,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "OMR",
+        "address": "OMR, Chennai",
+        "city": "Chennai",
+        "latitude": 12.9477,
+        "longitude": 80.2299,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 70,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Thiruvanmiyur",
+        "address": "Thiruvanmiyur, Chennai",
+        "city": "Chennai",
+        "latitude": 12.9825,
+        "longitude": 80.2615,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 71,
+        "name": "Saravana Bhavan",
+        "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "Dosa",
+            "Tamil"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "Pure Veg",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "T Nagar",
+        "address": "T Nagar, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0452,
+        "longitude": 80.2314,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 72,
+        "name": "Murugan Idli Shop",
+        "image": "https://images.unsplash.com/photo-1668236543090-82eb5eace6fc?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "Idli",
+            "Breakfast"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "30-35",
+        "costForTwo": 150,
+        "offers": [
+            "Free delivery",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Anna Nagar",
+        "address": "Anna Nagar, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0881,
+        "longitude": 80.2077,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 73,
+        "name": "Anjappar",
+        "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chettinad",
+            "South Indian",
+            "Non Veg"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "25-35",
+        "costForTwo": 500,
+        "offers": [
+            "15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Adyar",
+        "address": "Adyar, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0089,
+        "longitude": 80.2596,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 74,
+        "name": "Sangeetha Veg",
+        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "North Indian",
+            "Chinese"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Flat ₹100 OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Velachery",
+        "address": "Velachery, Chennai",
+        "city": "Chennai",
+        "latitude": 12.9814,
+        "longitude": 80.2221,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 75,
+        "name": "Junior Kuppanna",
+        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "Biryani",
+            "Andhra"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "10% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Nungambakkam",
+        "address": "Nungambakkam, Chennai",
+        "city": "Chennai",
+        "latitude": 13.0577,
+        "longitude": 80.2388,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 76,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Kothrud",
+        "address": "Kothrud, Pune",
+        "city": "Pune",
+        "latitude": 18.5081,
+        "longitude": 73.8081,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 77,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Viman Nagar",
+        "address": "Viman Nagar, Pune",
+        "city": "Pune",
+        "latitude": 18.5639,
+        "longitude": 73.9116,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 78,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Hinjewadi",
+        "address": "Hinjewadi, Pune",
+        "city": "Pune",
+        "latitude": 18.5877,
+        "longitude": 73.7368,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 79,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Koregaon Park",
+        "address": "Koregaon Park, Pune",
+        "city": "Pune",
+        "latitude": 18.5385,
+        "longitude": 73.8931,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 80,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Baner",
+        "address": "Baner, Pune",
+        "city": "Pune",
+        "latitude": 18.5638,
+        "longitude": 73.7851,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 81,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Aundh",
+        "address": "Aundh, Pune",
+        "city": "Pune",
+        "latitude": 18.5534,
+        "longitude": 73.8109,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 82,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Hadapsar",
+        "address": "Hadapsar, Pune",
+        "city": "Pune",
+        "latitude": 18.508,
+        "longitude": 73.9291,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 83,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Wakad",
+        "address": "Wakad, Pune",
+        "city": "Pune",
+        "latitude": 18.599,
+        "longitude": 73.761,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 84,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "FC Road",
+        "address": "FC Road, Pune",
+        "city": "Pune",
+        "latitude": 18.5322,
+        "longitude": 73.84,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 85,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Camp",
+        "address": "Camp, Pune",
+        "city": "Pune",
+        "latitude": 18.5078,
+        "longitude": 73.8845,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 86,
+        "name": "Vaishali Restaurant",
+        "image": "https://images.unsplash.com/photo-1668236543090-82eb5eace6fc?w=600&h=400&fit=crop",
+        "cuisines": [
+            "South Indian",
+            "Breakfast",
+            "Dosa"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "25-30",
+        "costForTwo": 200,
+        "offers": [
+            "Since 1951",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Kothrud",
+        "address": "Kothrud, Pune",
+        "city": "Pune",
+        "latitude": 18.5093,
+        "longitude": 73.8088,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 87,
+        "name": "Chitale Bandhu",
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Sweets",
+            "Snacks",
+            "Maharashtrian"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "30-35",
+        "costForTwo": 200,
+        "offers": [
+            "Free delivery",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Viman Nagar",
+        "address": "Viman Nagar, Pune",
+        "city": "Pune",
+        "latitude": 18.5716,
+        "longitude": 73.915,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 88,
+        "name": "German Bakery",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Bakery",
+            "Continental",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-35",
+        "costForTwo": 500,
+        "offers": [
+            "20% OFF pastries",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Hinjewadi",
+        "address": "Hinjewadi, Pune",
+        "city": "Pune",
+        "latitude": 18.5896,
+        "longitude": 73.7414,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 89,
+        "name": "Shreyas Restaurant",
+        "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Maharashtrian",
+            "Thali",
+            "North Indian"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "20-30",
+        "costForTwo": 350,
+        "offers": [
+            "Unlimited Thali",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Koregaon Park",
+        "address": "Koregaon Park, Pune",
+        "city": "Pune",
+        "latitude": 18.5349,
+        "longitude": 73.8925,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 90,
+        "name": "Vohuman Cafe",
+        "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Cafe",
+            "Breakfast",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 150,
+        "offers": [
+            "Bun Maska Special",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Baner",
+        "address": "Baner, Pune",
+        "city": "Pune",
+        "latitude": 18.5581,
+        "longitude": 73.7868,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 91,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Park Street",
+        "address": "Park Street, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5546,
+        "longitude": 88.3546,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 92,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Salt Lake",
+        "address": "Salt Lake, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5849,
+        "longitude": 88.4069,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 93,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "New Town",
+        "address": "New Town, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5895,
+        "longitude": 88.4877,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 94,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Gariahat",
+        "address": "Gariahat, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5149,
+        "longitude": 88.371,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 95,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Howrah",
+        "address": "Howrah, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.6,
+        "longitude": 88.2595,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 96,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Ballygunge",
+        "address": "Ballygunge, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5303,
+        "longitude": 88.3662,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 97,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Esplanade",
+        "address": "Esplanade, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5648,
+        "longitude": 88.3542,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 98,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Lake Town",
+        "address": "Lake Town, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.6048,
+        "longitude": 88.3919,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 99,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Jadavpur",
+        "address": "Jadavpur, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.4932,
+        "longitude": 88.3667,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 100,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Alipore",
+        "address": "Alipore, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5285,
+        "longitude": 88.3314,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 101,
+        "name": "Peter Cat",
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Continental",
+            "Indian",
+            "Kebabs"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "25-30",
+        "costForTwo": 700,
+        "offers": [
+            "Chelo Kebab Famous",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Park Street",
+        "address": "Park Street, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5557,
+        "longitude": 88.3498,
+        "deliveryRadius": 10
+    },
+    {
+        "id": 102,
+        "name": "Arsalan",
+        "image": "https://images.unsplash.com/photo-1642821373181-696a54913e93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mughlai",
+            "Biryani",
+            "Kebabs"
+        ],
+        "rating": 4.5,
+        "deliveryTime": "30-35",
+        "costForTwo": 500,
+        "offers": [
+            "Best Biryani in Kolkata",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Salt Lake",
+        "address": "Salt Lake, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5793,
+        "longitude": 88.4047,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 103,
+        "name": "Flurys",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Bakery",
+            "Continental",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-35",
+        "costForTwo": 450,
+        "offers": [
+            "Since 1927",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "New Town",
+        "address": "New Town, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5943,
+        "longitude": 88.4843,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 104,
+        "name": "6 Ballygunge Place",
+        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Bengali",
+            "Thali",
+            "Fish"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "20-30",
+        "costForTwo": 600,
+        "offers": [
+            "Bengali Thali Special",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Gariahat",
+        "address": "Gariahat, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5163,
+        "longitude": 88.3688,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 105,
+        "name": "Kookie Jar",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Bakery",
+            "Desserts",
+            "Cafe"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "15-25",
+        "costForTwo": 350,
+        "offers": [
+            "15% OFF on cakes",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Howrah",
+        "address": "Howrah, Kolkata",
+        "city": "Kolkata",
+        "latitude": 22.5925,
+        "longitude": 88.2598,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 106,
+        "name": "Pizza Hut",
+        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Pasta",
+            "Italian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "50% OFF up to ₹100",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "CG Road",
+        "address": "CG Road, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0215,
+        "longitude": 72.5601,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 107,
+        "name": "Dominos Pizza",
+        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas"
+        ],
+        "rating": 4,
+        "deliveryTime": "20-25",
+        "costForTwo": 400,
+        "offers": [
+            "₹100 OFF above ₹599",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "SG Highway",
+        "address": "SG Highway, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0466,
+        "longitude": 72.5286,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 108,
+        "name": "McDonalds",
+        "image": "https://images.unsplash.com/photo-1586816001966-79b736744398?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "Beverages",
+            "Cafe"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 40% OFF up to ₹80",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Prahlad Nagar",
+        "address": "Prahlad Nagar, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0121,
+        "longitude": 72.5135,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 109,
+        "name": "Burger King",
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Burgers",
+            "American",
+            "Fast Food"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "30-35",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF up to ₹50",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Satellite",
+        "address": "Satellite, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.021,
+        "longitude": 72.5268,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 110,
+        "name": "KFC",
+        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Chicken",
+            "Burgers",
+            "Fast Food"
+        ],
+        "rating": 4,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "20% OFF up to ₹120",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Navrangpura",
+        "address": "Navrangpura, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0402,
+        "longitude": 72.5617,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 111,
+        "name": "Subway",
+        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Healthy Food",
+            "Salads",
+            "Wraps"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "20-30",
+        "costForTwo": 300,
+        "offers": [
+            "Buy 1 Get 1 FREE",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Maninagar",
+        "address": "Maninagar, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 22.9949,
+        "longitude": 72.6112,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 112,
+        "name": "Starbucks Coffee",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "15-25",
+        "costForTwo": 450,
+        "offers": [
+            "20% OFF on beverages",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Bopal",
+        "address": "Bopal, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 22.9772,
+        "longitude": 72.4738,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 113,
+        "name": "Baskin Robbins",
+        "image": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "30-40",
+        "costForTwo": 250,
+        "offers": [
+            "TRYNEW: 15% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Vastrapur",
+        "address": "Vastrapur, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0399,
+        "longitude": 72.5303,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 114,
+        "name": "Taco Bell",
+        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mexican",
+            "Fast Food",
+            "Wraps"
+        ],
+        "rating": 4,
+        "deliveryTime": "15-20",
+        "costForTwo": 350,
+        "offers": [
+            "30% OFF up to ₹75",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Thaltej",
+        "address": "Thaltej, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0494,
+        "longitude": 72.5025,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 115,
+        "name": "NIC Ice Creams",
+        "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "20-25",
+        "costForTwo": 150,
+        "offers": [
+            "TRYNEW: 20% OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Bodakdev",
+        "address": "Bodakdev, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0379,
+        "longitude": 72.5108,
+        "deliveryRadius": 11
+    },
+    {
+        "id": 116,
+        "name": "Manek Chowk Street Food",
+        "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Street Food",
+            "Gujarati",
+            "Snacks"
+        ],
+        "rating": 4.3,
+        "deliveryTime": "25-30",
+        "costForTwo": 200,
+        "offers": [
+            "Night Market Special",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "CG Road",
+        "address": "CG Road, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0263,
+        "longitude": 72.5578,
+        "deliveryRadius": 9
+    },
+    {
+        "id": 117,
+        "name": "Agashiye",
+        "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Gujarati",
+            "Thali",
+            "Traditional"
+        ],
+        "rating": 4.6,
+        "deliveryTime": "30-35",
+        "costForTwo": 800,
+        "offers": [
+            "Premium Gujarati Thali",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "SG Highway",
+        "address": "SG Highway, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0439,
+        "longitude": 72.5315,
+        "deliveryRadius": 8
+    },
+    {
+        "id": 118,
+        "name": "Honest Restaurant",
+        "image": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Mughlai",
+            "Chinese",
+            "North Indian"
+        ],
+        "rating": 4.1,
+        "deliveryTime": "25-35",
+        "costForTwo": 400,
+        "offers": [
+            "Flat ₹75 OFF",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Prahlad Nagar",
+        "address": "Prahlad Nagar, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0182,
+        "longitude": 72.5159,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 119,
+        "name": "Gordhan Thal",
+        "image": "https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Gujarati",
+            "Thali",
+            "Rajasthani"
+        ],
+        "rating": 4.4,
+        "deliveryTime": "20-30",
+        "costForTwo": 500,
+        "offers": [
+            "Unlimited Thali",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": true,
+        "area": "Satellite",
+        "address": "Satellite, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0133,
+        "longitude": 72.5283,
+        "deliveryRadius": 12
+    },
+    {
+        "id": 120,
+        "name": "Havmor Restaurant",
+        "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=600&h=400&fit=crop",
+        "cuisines": [
+            "Ice Cream",
+            "Fast Food",
+            "Chinese"
+        ],
+        "rating": 4.2,
+        "deliveryTime": "15-25",
+        "costForTwo": 300,
+        "offers": [
+            "20% OFF ice cream",
+            "Free delivery on orders above ₹199"
+        ],
+        "isVeg": false,
+        "area": "Navrangpura",
+        "address": "Navrangpura, Ahmedabad",
+        "city": "Ahmedabad",
+        "latitude": 23.0376,
+        "longitude": 72.5621,
+        "deliveryRadius": 9
+    }
+]

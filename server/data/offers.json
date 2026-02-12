@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "code": "TRYNEW",
+        "description": "40% OFF up to ₹80",
+        "minOrder": 149,
+        "type": "percent",
+        "value": 40,
+        "maxDiscount": 80
+    },
+    {
+        "id": 2,
+        "code": "SWIGGYIT",
+        "description": "50% OFF up to ₹100",
+        "minOrder": 199,
+        "type": "percent",
+        "value": 50,
+        "maxDiscount": 100
+    },
+    {
+        "id": 3,
+        "code": "FLAT100",
+        "description": "Flat ₹100 OFF on orders above ₹599",
+        "minOrder": 599,
+        "type": "flat",
+        "value": 100,
+        "maxDiscount": 100
+    },
+    {
+        "id": 4,
+        "code": "PARTY",
+        "description": "20% OFF up to ₹120 on party orders",
+        "minOrder": 499,
+        "type": "percent",
+        "value": 20,
+        "maxDiscount": 120
+    },
+    {
+        "id": 5,
+        "code": "WELCOME50",
+        "description": "50% OFF up to ₹150 on your first order",
+        "minOrder": 249,
+        "type": "percent",
+        "value": 50,
+        "maxDiscount": 150
+    },
+    {
+        "id": 6,
+        "code": "FREEDELIVERY",
+        "description": "Free delivery on orders above ₹199",
+        "minOrder": 199,
+        "type": "delivery",
+        "value": 0,
+        "maxDiscount": 50
+    },
+    {
+        "id": 7,
+        "code": "BOGO",
+        "description": "Buy 1 Get 1 FREE on select items",
+        "minOrder": 299,
+        "type": "bogo",
+        "value": 100,
+        "maxDiscount": 200
+    },
+    {
+        "id": 8,
+        "code": "WEEKEND",
+        "description": "25% OFF up to ₹75 on weekend orders",
+        "minOrder": 349,
+        "type": "percent",
+        "value": 25,
+        "maxDiscount": 75
+    }
+]

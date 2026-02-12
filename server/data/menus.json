@@ -1,0 +1,956 @@
+{
+    "1": {
+        "restaurantId": 1,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 101,
+                        "name": "Margherita Pizza",
+                        "description": "Classic delight with 100% real mozzarella cheese",
+                        "price": 199,
+                        "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300/FOOD_CATALOG/IMAGES/CMS/2024/4/13/e73af220-bb1e-4a60-aae9-1cab75885498_c7af1a93-8ffc-49cc-8d5b-92b24b373754.jpg",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.3,
+                        "ratingCount": 854
+                    },
+                    {
+                        "id": 102,
+                        "name": "Pepperoni Pizza",
+                        "description": "Loaded with spicy pepperoni and mozzarella",
+                        "price": 349,
+                        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 612
+                    },
+                    {
+                        "id": 103,
+                        "name": "Farm House Pizza",
+                        "description": "Fresh veggies with onion, capsicum, tomato & mushroom",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 421
+                    }
+                ]
+            },
+            {
+                "name": "Pizzas",
+                "items": [
+                    {
+                        "id": 104,
+                        "name": "Veggie Supreme",
+                        "description": "Loaded with crisp capsicum, baby corn, mushroom & olives",
+                        "price": 349,
+                        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 312
+                    },
+                    {
+                        "id": 105,
+                        "name": "Chicken Tikka Pizza",
+                        "description": "Diced chicken tikka with onion & red paprika",
+                        "price": 399,
+                        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 528
+                    },
+                    {
+                        "id": 106,
+                        "name": "BBQ Chicken Pizza",
+                        "description": "Grilled chicken with smoky BBQ sauce",
+                        "price": 449,
+                        "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 245
+                    },
+                    {
+                        "id": 107,
+                        "name": "Double Cheese Margherita",
+                        "description": "Extra cheese loaded margherita pizza",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 703
+                    }
+                ]
+            },
+            {
+                "name": "Pasta & Sides",
+                "items": [
+                    {
+                        "id": 108,
+                        "name": "Creamy Alfredo Pasta",
+                        "description": "Penne in rich creamy white sauce",
+                        "price": 199,
+                        "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 198
+                    },
+                    {
+                        "id": 109,
+                        "name": "Garlic Breadsticks",
+                        "description": "Freshly baked with garlic butter",
+                        "price": 99,
+                        "image": "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 921
+                    },
+                    {
+                        "id": 110,
+                        "name": "Chicken Wings",
+                        "description": "Crispy chicken wings with spicy peri-peri sauce",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 342
+                    }
+                ]
+            },
+            {
+                "name": "Beverages",
+                "items": [
+                    {
+                        "id": 111,
+                        "name": "Pepsi (475ml)",
+                        "description": "Refreshing Pepsi cola",
+                        "price": 69,
+                        "image": "https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 3.9,
+                        "ratingCount": 120
+                    },
+                    {
+                        "id": 112,
+                        "name": "Mojito",
+                        "description": "Fresh mint mojito",
+                        "price": 129,
+                        "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 87
+                    }
+                ]
+            }
+        ]
+    },
+    "2": {
+        "restaurantId": 2,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 201,
+                        "name": "Whopper",
+                        "description": "Flame-grilled beef patty with fresh veggies",
+                        "price": 199,
+                        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 1203
+                    },
+                    {
+                        "id": 202,
+                        "name": "Veg Whopper",
+                        "description": "Crispy veg patty with lettuce & mayo",
+                        "price": 169,
+                        "image": "https://images.unsplash.com/photo-1585238342024-78d387f4132e?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.2,
+                        "ratingCount": 845
+                    },
+                    {
+                        "id": 203,
+                        "name": "Chicken Royale",
+                        "description": "Crispy chicken fillet with creamy mayo",
+                        "price": 179,
+                        "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 672
+                    }
+                ]
+            },
+            {
+                "name": "Burgers",
+                "items": [
+                    {
+                        "id": 204,
+                        "name": "Crunchy Chicken Burger",
+                        "description": "Crispy chicken with crunchy veggies",
+                        "price": 129,
+                        "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 342
+                    },
+                    {
+                        "id": 205,
+                        "name": "Paneer Royale",
+                        "description": "Grilled paneer patty with signature sauce",
+                        "price": 149,
+                        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 289
+                    },
+                    {
+                        "id": 206,
+                        "name": "BK Veggie",
+                        "description": "Classic veg burger with fresh toppings",
+                        "price": 89,
+                        "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 3.9,
+                        "ratingCount": 456
+                    }
+                ]
+            },
+            {
+                "name": "Sides & Beverages",
+                "items": [
+                    {
+                        "id": 207,
+                        "name": "French Fries (Medium)",
+                        "description": "Crispy golden french fries",
+                        "price": 99,
+                        "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 1532
+                    },
+                    {
+                        "id": 208,
+                        "name": "Onion Rings",
+                        "description": "Crispy fried onion rings",
+                        "price": 89,
+                        "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 321
+                    },
+                    {
+                        "id": 209,
+                        "name": "Coca Cola (300ml)",
+                        "description": "Chilled Coca Cola",
+                        "price": 59,
+                        "image": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 189
+                    }
+                ]
+            }
+        ]
+    },
+    "3": {
+        "restaurantId": 3,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 301,
+                        "name": "McChicken Burger",
+                        "description": "Juicy chicken patty with a crispy coating",
+                        "price": 149,
+                        "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 2341
+                    },
+                    {
+                        "id": 302,
+                        "name": "McVeggie",
+                        "description": "Crisp veg patty with lettuce and mayo",
+                        "price": 129,
+                        "image": "https://images.unsplash.com/photo-1585238342024-78d387f4132e?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.2,
+                        "ratingCount": 1876
+                    }
+                ]
+            },
+            {
+                "name": "Meals & Combos",
+                "items": [
+                    {
+                        "id": 303,
+                        "name": "McSpicy Chicken Meal",
+                        "description": "McSpicy chicken burger + fries + coke",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 1523
+                    },
+                    {
+                        "id": 304,
+                        "name": "Big Mac Meal",
+                        "description": "Iconic Big Mac + fries + coke",
+                        "price": 349,
+                        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 987
+                    },
+                    {
+                        "id": 305,
+                        "name": "McVeggie Meal",
+                        "description": "McVeggie burger + fries + coke",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 654
+                    }
+                ]
+            },
+            {
+                "name": "Sides",
+                "items": [
+                    {
+                        "id": 306,
+                        "name": "Fries (Large)",
+                        "description": "Golden crispy french fries",
+                        "price": 139,
+                        "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 3421
+                    },
+                    {
+                        "id": 307,
+                        "name": "Chicken McNuggets (6pcs)",
+                        "description": "Tender chicken nuggets",
+                        "price": 179,
+                        "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 892
+                    }
+                ]
+            }
+        ]
+    },
+    "4": {
+        "restaurantId": 4,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 401,
+                        "name": "Farmhouse Pizza",
+                        "description": "Delicious combination of bell pepper, mushroom, onion & tomato",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.3,
+                        "ratingCount": 1456
+                    },
+                    {
+                        "id": 402,
+                        "name": "Peppy Paneer",
+                        "description": "Chunky paneer with crisp capsicum & red paprika",
+                        "price": 349,
+                        "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 1823
+                    }
+                ]
+            },
+            {
+                "name": "Veg Pizza",
+                "items": [
+                    {
+                        "id": 403,
+                        "name": "Margherita",
+                        "description": "A hugely popular margherita with single cheese topping",
+                        "price": 149,
+                        "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 987
+                    },
+                    {
+                        "id": 404,
+                        "name": "Mexican Green Wave",
+                        "description": "Capsicum, tomato, jalapeno & red paprika with Mexican herbs",
+                        "price": 399,
+                        "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 534
+                    }
+                ]
+            },
+            {
+                "name": "Non-Veg Pizza",
+                "items": [
+                    {
+                        "id": 405,
+                        "name": "Chicken Dominator",
+                        "description": "Loaded with double pepper barbecue chicken, peri-peri chicken & chicken tikka",
+                        "price": 499,
+                        "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.6,
+                        "ratingCount": 2103
+                    },
+                    {
+                        "id": 406,
+                        "name": "Pepper Barbecue Chicken",
+                        "description": "Pepper barbecue chicken with spicy chicken sausage",
+                        "price": 449,
+                        "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 765
+                    }
+                ]
+            },
+            {
+                "name": "Desserts",
+                "items": [
+                    {
+                        "id": 407,
+                        "name": "Choco Lava Cake",
+                        "description": "Indulgent chocolate flowing inside a warm chocolate cake",
+                        "price": 109,
+                        "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 3215
+                    },
+                    {
+                        "id": 408,
+                        "name": "Butterscotch Mousse Cake",
+                        "description": "Creamy butterscotch mousse cake",
+                        "price": 119,
+                        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 876
+                    }
+                ]
+            }
+        ]
+    },
+    "5": {
+        "restaurantId": 5,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 501,
+                        "name": "Chicken Zinger",
+                        "description": "Crispy chicken fillet in a soft bun with lettuce & mayo",
+                        "price": 219,
+                        "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 2341
+                    },
+                    {
+                        "id": 502,
+                        "name": "Hot Wings (5pcs)",
+                        "description": "Spicy crispy chicken wings",
+                        "price": 199,
+                        "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 1856
+                    }
+                ]
+            },
+            {
+                "name": "Chicken Buckets",
+                "items": [
+                    {
+                        "id": 503,
+                        "name": "8 Pc Hot & Crispy Bucket",
+                        "description": "8 pieces of signature Hot & Crispy chicken",
+                        "price": 649,
+                        "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.6,
+                        "ratingCount": 1523
+                    },
+                    {
+                        "id": 504,
+                        "name": "Popcorn Chicken (Large)",
+                        "description": "Bite-sized crispy chicken pieces",
+                        "price": 269,
+                        "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 987
+                    }
+                ]
+            },
+            {
+                "name": "Burgers",
+                "items": [
+                    {
+                        "id": 505,
+                        "name": "Classic Chicken Burger",
+                        "description": "Chicken fillet in a toasted bun",
+                        "price": 129,
+                        "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 654
+                    },
+                    {
+                        "id": 506,
+                        "name": "Veg Zinger",
+                        "description": "Crispy veg patty with lettuce and mayo",
+                        "price": 179,
+                        "image": "https://images.unsplash.com/photo-1585238342024-78d387f4132e?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 432
+                    }
+                ]
+            }
+        ]
+    },
+    "6": {
+        "restaurantId": 6,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 601,
+                        "name": "Chicken Dum Biryani",
+                        "description": "Aromatic long grain basmati rice cooked with tender chicken",
+                        "price": 329,
+                        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.6,
+                        "ratingCount": 5421
+                    },
+                    {
+                        "id": 602,
+                        "name": "Mutton Dum Biryani",
+                        "description": "Slow cooked mutton biryani with rich spices",
+                        "price": 399,
+                        "image": "https://images.unsplash.com/photo-1642821373181-696a54913e93?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 3248
+                    },
+                    {
+                        "id": 603,
+                        "name": "Veg Biryani",
+                        "description": "Mixed vegetables cooked with aromatic rice",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 1234
+                    }
+                ]
+            },
+            {
+                "name": "Starters",
+                "items": [
+                    {
+                        "id": 604,
+                        "name": "Chicken 65",
+                        "description": "Spicy deep-fried chicken with curry leaves",
+                        "price": 259,
+                        "image": "https://images.unsplash.com/photo-1610057099443-fde6c99db9e1?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 2341
+                    },
+                    {
+                        "id": 605,
+                        "name": "Paneer 65",
+                        "description": "Crispy paneer fritters with spices",
+                        "price": 229,
+                        "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 876
+                    },
+                    {
+                        "id": 606,
+                        "name": "Apollo Fish",
+                        "description": "Crispy fried fish with tangy masala",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.4,
+                        "ratingCount": 1523
+                    }
+                ]
+            },
+            {
+                "name": "Main Course",
+                "items": [
+                    {
+                        "id": 607,
+                        "name": "Butter Chicken",
+                        "description": "Tender chicken in rich buttery tomato gravy",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 1876
+                    },
+                    {
+                        "id": 608,
+                        "name": "Andhra Chicken Curry",
+                        "description": "Spicy Andhra-style chicken curry",
+                        "price": 279,
+                        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 1234
+                    }
+                ]
+            }
+        ]
+    },
+    "7": {
+        "restaurantId": 7,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 701,
+                        "name": "Caffè Mocha",
+                        "description": "Rich espresso with bittersweet mocha sauce, steamed milk & whipped cream",
+                        "price": 375,
+                        "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 1234
+                    },
+                    {
+                        "id": 702,
+                        "name": "Caramel Frappuccino",
+                        "description": "Blended coffee with caramel syrup, milk & ice",
+                        "price": 395,
+                        "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 1876
+                    }
+                ]
+            },
+            {
+                "name": "Cold Coffees",
+                "items": [
+                    {
+                        "id": 703,
+                        "name": "Iced Americano",
+                        "description": "Espresso shots with cold water and ice",
+                        "price": 295,
+                        "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 654
+                    },
+                    {
+                        "id": 704,
+                        "name": "Cold Brew",
+                        "description": "Slow steeped cold brew coffee",
+                        "price": 325,
+                        "image": "https://images.unsplash.com/photo-1592663527359-cf6642f54cff?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 532
+                    }
+                ]
+            },
+            {
+                "name": "Snacks",
+                "items": [
+                    {
+                        "id": 705,
+                        "name": "Chocolate Chip Muffin",
+                        "description": "Freshly baked chocolate chip muffin",
+                        "price": 195,
+                        "image": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 342
+                    },
+                    {
+                        "id": 706,
+                        "name": "Chicken Puff",
+                        "description": "Flaky puff pastry with spiced chicken filling",
+                        "price": 165,
+                        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 231
+                    }
+                ]
+            }
+        ]
+    },
+    "8": {
+        "restaurantId": 8,
+        "categories": [
+            {
+                "name": "Biryani",
+                "items": [
+                    {
+                        "id": 801,
+                        "name": "Hyderabadi Chicken Biryani",
+                        "description": "Authentic Hyderabadi dum biryani with tender chicken",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 3421
+                    },
+                    {
+                        "id": 802,
+                        "name": "Mutton Biryani",
+                        "description": "Rich and flavorful mutton biryani",
+                        "price": 379,
+                        "image": "https://images.unsplash.com/photo-1642821373181-696a54913e93?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 2345
+                    },
+                    {
+                        "id": 803,
+                        "name": "Paneer Biryani",
+                        "description": "Cottage cheese biryani with aromatic spices",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 765
+                    }
+                ]
+            },
+            {
+                "name": "Kebabs",
+                "items": [
+                    {
+                        "id": 804,
+                        "name": "Chicken Seekh Kebab",
+                        "description": "Minced chicken kebabs grilled to perfection",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 876
+                    },
+                    {
+                        "id": 805,
+                        "name": "Mutton Seekh Kebab",
+                        "description": "Spiced minced mutton kebabs",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1603496987351-f84a3ba5ec85?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.2,
+                        "ratingCount": 543
+                    }
+                ]
+            }
+        ]
+    },
+    "9": {
+        "restaurantId": 9,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 901,
+                        "name": "Veggie Delite",
+                        "description": "Fresh veggies with your choice of bread and sauce",
+                        "price": 179,
+                        "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.2,
+                        "ratingCount": 1234
+                    },
+                    {
+                        "id": 902,
+                        "name": "Chicken Teriyaki",
+                        "description": "Glazed chicken teriyaki with fresh veggies",
+                        "price": 299,
+                        "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.4,
+                        "ratingCount": 1876
+                    }
+                ]
+            },
+            {
+                "name": "Subs",
+                "items": [
+                    {
+                        "id": 903,
+                        "name": "Italian BMT",
+                        "description": "Pepperoni, salami & ham loaded sub",
+                        "price": 329,
+                        "image": "https://images.unsplash.com/photo-1554433607-66b5a31b0007?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.3,
+                        "ratingCount": 654
+                    },
+                    {
+                        "id": 904,
+                        "name": "Paneer Tikka",
+                        "description": "Tandoori paneer with mint mayo",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 543
+                    }
+                ]
+            }
+        ]
+    },
+    "10": {
+        "restaurantId": 10,
+        "categories": [
+            {
+                "name": "Recommended",
+                "items": [
+                    {
+                        "id": 1001,
+                        "name": "Crunchwrap Supreme",
+                        "description": "Seasoned beef, nacho chips, sour cream, cheese sauce in a flour tortilla",
+                        "price": 249,
+                        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": true,
+                        "rating": 4.3,
+                        "ratingCount": 876
+                    },
+                    {
+                        "id": 1002,
+                        "name": "Mexican Churros",
+                        "description": "Crispy churros with chocolate dipping sauce",
+                        "price": 149,
+                        "image": "https://images.unsplash.com/photo-1624371414361-e670aecda066?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": true,
+                        "rating": 4.5,
+                        "ratingCount": 1234
+                    }
+                ]
+            },
+            {
+                "name": "Tacos",
+                "items": [
+                    {
+                        "id": 1003,
+                        "name": "Chicken Crunchy Taco",
+                        "description": "Crunchy taco shell with seasoned chicken",
+                        "price": 129,
+                        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=300&h=300&fit=crop",
+                        "isVeg": false,
+                        "isBestseller": false,
+                        "rating": 4.1,
+                        "ratingCount": 543
+                    },
+                    {
+                        "id": 1004,
+                        "name": "Veg Crunchy Taco",
+                        "description": "Crunchy taco with spiced potato filling",
+                        "price": 109,
+                        "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=300&h=300&fit=crop",
+                        "isVeg": true,
+                        "isBestseller": false,
+                        "rating": 4.0,
+                        "ratingCount": 432
+                    }
+                ]
+            }
+        ]
+    }
+}
