@@ -3,6 +3,12 @@ const router = express.Router();
 const restaurants = require('../data/restaurants.json');
 const { calculateDistance, calculateDeliveryTime, isWithinDeliveryRadius } = require('../utils/deliveryCalculator');
 
+// Sanitize string inputs
+function sanitize(str) {
+    if (typeof str !== 'string') return '';
+    return str.replace(/[<>"'&]/g, '').trim();
+}
+
 // GET /api/restaurants - Get all restaurants with optional filters including location
 router.get('/', (req, res) => {
     let results = [...restaurants];
@@ -11,6 +17,19 @@ router.get('/', (req, res) => {
     const userLat = parseFloat(lat);
     const userLng = parseFloat(lng);
     const maxRadius = parseFloat(radius) || 10;
+
+    // Validate radius range
+    if (maxRadius < 0 || maxRadius > 100) {
+        return res.status(400).json({ success: false, message: 'Radius must be between 0 and 100 km' });
+    }
+
+    // Validate coordinates range
+    if (!isNaN(userLat) && (userLat < -90 || userLat > 90)) {
+        return res.status(400).json({ success: false, message: 'Latitude must be between -90 and 90' });
+    }
+    if (!isNaN(userLng) && (userLng < -180 || userLng > 180)) {
+        return res.status(400).json({ success: false, message: 'Longitude must be between -180 and 180' });
+    }
 
     // Filter by location (if coordinates provided)
     if (!isNaN(userLat) && !isNaN(userLng)) {
@@ -31,24 +50,28 @@ router.get('/', (req, res) => {
         });
     }
 
-    // Filter by cuisine
+    // Filter by cuisine (sanitized)
     if (cuisine) {
-        const cuisineFilter = cuisine.toLowerCase();
+        const cuisineFilter = sanitize(cuisine).toLowerCase();
         results = results.filter(r =>
             r.cuisines.some(c => c.toLowerCase().includes(cuisineFilter))
         );
     }
 
-    // Filter by area
+    // Filter by area (sanitized)
     if (area) {
+        const areaFilter = sanitize(area).toLowerCase();
         results = results.filter(r =>
-            r.area.toLowerCase().includes(area.toLowerCase())
+            r.area.toLowerCase().includes(areaFilter)
         );
     }
 
     // Filter by rating
     if (rating) {
-        results = results.filter(r => r.rating >= parseFloat(rating));
+        const ratingVal = parseFloat(rating);
+        if (!isNaN(ratingVal) && ratingVal >= 0 && ratingVal <= 5) {
+            results = results.filter(r => r.rating >= ratingVal);
+        }
     }
 
     // Filter by veg
@@ -56,9 +79,9 @@ router.get('/', (req, res) => {
         results = results.filter(r => r.isVeg);
     }
 
-    // Search by name or cuisine
+    // Search by name or cuisine (sanitized)
     if (search) {
-        const searchLower = search.toLowerCase();
+        const searchLower = sanitize(search).toLowerCase();
         results = results.filter(r =>
             r.name.toLowerCase().includes(searchLower) ||
             r.cuisines.some(c => c.toLowerCase().includes(searchLower))
@@ -97,7 +120,12 @@ router.get('/', (req, res) => {
 
 // GET /api/restaurants/:id - Get restaurant by ID with optional location for dynamic delivery time
 router.get('/:id', (req, res) => {
-    const restaurant = restaurants.find(r => r.id === parseInt(req.params.id));
+    const id = parseInt(req.params.id);
+    if (isNaN(id)) {
+        return res.status(400).json({ success: false, message: 'Invalid restaurant ID' });
+    }
+
+    const restaurant = restaurants.find(r => r.id === id);
     if (!restaurant) {
         return res.status(404).json({ success: false, message: 'Restaurant not found' });
     }

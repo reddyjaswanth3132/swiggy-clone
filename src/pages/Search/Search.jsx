@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { FiSearch, FiX } from 'react-icons/fi';
+import { FiSearch, FiX, FiAlertCircle } from 'react-icons/fi';
 import RestaurantCard from '../../components/RestaurantCard/RestaurantCard';
 import { fetchRestaurants } from '../../utils/api';
 import './Search.css';
@@ -17,6 +17,7 @@ export default function Search() {
     const [results, setResults] = useState([]);
     const [loading, setLoading] = useState(false);
     const [searched, setSearched] = useState(false);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const q = searchParams.get('q');
@@ -27,11 +28,13 @@ export default function Search() {
         if (!searchQuery.trim()) return;
         setLoading(true);
         setSearched(true);
+        setError(null);
         try {
             const res = await fetchRestaurants({ search: searchQuery });
             if (res.success) setResults(res.data);
         } catch (err) {
             console.error('Search failed:', err);
+            setError(err.message || 'Search failed. Please try again.');
         }
         setLoading(false);
     };
@@ -57,7 +60,7 @@ export default function Search() {
                     <FiSearch className="search-page__icon" />
                     <input type="text" placeholder="Search for restaurants and food"
                         value={query} onChange={e => setQuery(e.target.value)} autoFocus />
-                    {query && <FiX className="search-page__clear" onClick={() => { setQuery(''); setResults([]); setSearched(false); }} />}
+                    {query && <FiX className="search-page__clear" onClick={() => { setQuery(''); setResults([]); setSearched(false); setError(null); }} />}
                 </form>
 
                 {!searched && (
@@ -73,6 +76,14 @@ export default function Search() {
                     </div>
                 )}
 
+                {error && (
+                    <div className="search-page__error">
+                        <FiAlertCircle size={24} />
+                        <p>{error}</p>
+                        <button onClick={() => performSearch(query)}>Try Again</button>
+                    </div>
+                )}
+
                 {loading && (
                     <div className="search-page__loading">
                         {[...Array(6)].map((_, i) => (
@@ -81,7 +92,7 @@ export default function Search() {
                     </div>
                 )}
 
-                {searched && !loading && (
+                {searched && !loading && !error && (
                     <div className="search-page__results">
                         <h3>{results.length} restaurant{results.length !== 1 ? 's' : ''} found {query && `for "${query}"`}</h3>
                         <div className="search-page__results-grid">

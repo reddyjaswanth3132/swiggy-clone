@@ -22,17 +22,17 @@ export default function Footer() {
 
                     <div className="footer__links-group">
                         <h4>Company</h4>
-                        <Link to="/about">About</Link>
-                        <Link to="/careers">Careers</Link>
-                        <Link to="/team">Team</Link>
-                        <Link to="/blog">Swiggy Blog</Link>
+                        <span className="footer__link-placeholder">About</span>
+                        <span className="footer__link-placeholder">Careers</span>
+                        <span className="footer__link-placeholder">Team</span>
+                        <span className="footer__link-placeholder">Swiggy Blog</span>
                     </div>
 
                     <div className="footer__links-group">
                         <h4>Contact us</h4>
                         <Link to="/help">Help & Support</Link>
-                        <Link to="/partner">Partner with us</Link>
-                        <Link to="/ride">Ride with us</Link>
+                        <span className="footer__link-placeholder">Partner with us</span>
+                        <span className="footer__link-placeholder">Ride with us</span>
                     </div>
 
                     <div className="footer__links-group">
@@ -47,24 +47,24 @@ export default function Footer() {
 
                     <div className="footer__links-group">
                         <h4>Life at Swiggy</h4>
-                        <Link to="/explore">Explore with Swiggy</Link>
-                        <Link to="/super">Swiggy Super</Link>
-                        <Link to="/instamart">Swiggy Instamart</Link>
-                        <Link to="/genie">Swiggy Genie</Link>
+                        <span className="footer__link-placeholder">Explore with Swiggy</span>
+                        <span className="footer__link-placeholder">Swiggy Super</span>
+                        <span className="footer__link-placeholder">Swiggy Instamart</span>
+                        <span className="footer__link-placeholder">Swiggy Genie</span>
                     </div>
                 </div>
 
                 <div className="footer__bottom">
                     <div className="footer__social">
-                        <a href="#" className="footer__social-link"><FiInstagram /></a>
-                        <a href="#" className="footer__social-link"><FiFacebook /></a>
-                        <a href="#" className="footer__social-link"><FiTwitter /></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer__social-link"><FiInstagram /></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer__social-link"><FiFacebook /></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer__social-link"><FiTwitter /></a>
                     </div>
                     <div className="footer__app-badges">
-                        <a href="#" className="footer__app-badge">
+                        <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" className="footer__app-badge">
                             <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png" alt="Google Play" />
                         </a>
-                        <a href="#" className="footer__app-badge">
+                        <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="footer__app-badge">
                             <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/app_store.png" alt="App Store" />
                         </a>
                     </div>
@@ -73,3 +73,4 @@ export default function Footer() {
         </footer>
     );
 }
+

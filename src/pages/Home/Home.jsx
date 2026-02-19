@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight, FiMapPin, FiZap } from 'react-icons/fi';
+import { FiChevronLeft, FiChevronRight, FiMapPin, FiZap, FiAlertCircle } from 'react-icons/fi';
 import FoodCategorySlider from '../../components/FoodCategorySlider/FoodCategorySlider';
 import RestaurantCard from '../../components/RestaurantCard/RestaurantCard';
 import { fetchRestaurants } from '../../utils/api';
@@ -29,6 +29,7 @@ export default function Home() {
     const [restaurants, setRestaurants] = useState([]);
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
     const [activeFilters, setActiveFilters] = useState([]);
     const [activeSort, setActiveSort] = useState('');
     const [topChainIndex, setTopChainIndex] = useState(0);
@@ -62,12 +63,9 @@ export default function Home() {
     const { connected } = useRealTimeUpdates(handleLiveUpdate);
 
     // Load restaurants whenever location changes
-    useEffect(() => {
-        loadRestaurants();
-    }, [location.latitude, location.longitude]);
-
-    const loadRestaurants = async () => {
+    const loadRestaurants = useCallback(async () => {
         setLoading(true);
+        setError(null);
         try {
             const params = {
                 lat: location.latitude,
@@ -81,9 +79,14 @@ export default function Home() {
             }
         } catch (err) {
             console.error('Failed to load restaurants:', err);
+            setError(err.message || 'Failed to load restaurants. Please try again.');
         }
         setLoading(false);
-    };
+    }, [location.latitude, location.longitude]);
+
+    useEffect(() => {
+        loadRestaurants();
+    }, [loadRestaurants]);
 
     useEffect(() => {
         let result = [...restaurants];
@@ -155,94 +158,107 @@ export default function Home() {
                 {/* Food Categories */}
                 <FoodCategorySlider />
 
+                {/* Error State */}
+                {error && (
+                    <div className="home__error">
+                        <FiAlertCircle size={24} />
+                        <p>{error}</p>
+                        <button onClick={loadRestaurants}>Try Again</button>
+                    </div>
+                )}
+
                 {/* Top Restaurant Chains */}
-                <section className="home__top-chains">
-                    <div className="home__section-header">
-                        <h2>Top restaurant chains in {location.city || 'your area'}</h2>
-                        <div className="home__section-arrows">
-                            <button onClick={() => scrollTopChains('left')} disabled={topChainIndex === 0} className="home__arrow-btn"><FiChevronLeft /></button>
-                            <button onClick={() => scrollTopChains('right')} disabled={topChainIndex >= topChains.length - visibleChains} className="home__arrow-btn"><FiChevronRight /></button>
+                {!error && (
+                    <section className="home__top-chains">
+                        <div className="home__section-header">
+                            <h2>Top restaurant chains in {location.city || 'your area'}</h2>
+                            <div className="home__section-arrows">
+                                <button onClick={() => scrollTopChains('left')} disabled={topChainIndex === 0} className="home__arrow-btn"><FiChevronLeft /></button>
+                                <button onClick={() => scrollTopChains('right')} disabled={topChainIndex >= topChains.length - visibleChains} className="home__arrow-btn"><FiChevronRight /></button>
+                            </div>
                         </div>
-                    </div>
-                    <div className="home__top-chains-slider">
-                        <div className="home__top-chains-track" style={{ transform: `translateX(-${topChainIndex * 280}px)` }}>
-                            {topChains.map(r => (
-                                <div key={r.id} className={`home__top-chain-card ${r.hasLiveUpdate ? 'live-pulse' : ''}`} onClick={() => navigate(`/restaurant/${r.id}`)}>
-                                    <div className="home__top-chain-img-wrap">
-                                        <img src={r.image} alt={r.name}
-                                            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop'; }}
-                                        />
-                                        <div className="home__top-chain-gradient" />
-                                        {r.liveOffer && <span className="home__top-chain-offer home__live-offer">{r.liveOffer}</span>}
-                                        {!r.liveOffer && r.offers[0] && <span className="home__top-chain-offer">{r.offers[0]}</span>}
-                                        {r.hasLiveUpdate && <span className="home__live-badge">LIVE</span>}
+                        <div className="home__top-chains-slider">
+                            <div className="home__top-chains-track" style={{ transform: `translateX(-${topChainIndex * 280}px)` }}>
+                                {topChains.map(r => (
+                                    <div key={r.id} className={`home__top-chain-card ${r.hasLiveUpdate ? 'live-pulse' : ''}`} onClick={() => navigate(`/restaurant/${r.id}`)}>
+                                        <div className="home__top-chain-img-wrap">
+                                            <img src={r.image} alt={r.name}
+                                                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop'; }}
+                                            />
+                                            <div className="home__top-chain-gradient" />
+                                            {r.liveOffer && <span className="home__top-chain-offer home__live-offer">{r.liveOffer}</span>}
+                                            {!r.liveOffer && r.offers[0] && <span className="home__top-chain-offer">{r.offers[0]}</span>}
+                                            {r.hasLiveUpdate && <span className="home__live-badge">LIVE</span>}
+                                        </div>
+                                        <h4>{r.name}</h4>
+                                        <div className="home__top-chain-meta">
+                                            <span className="home__top-chain-rating">★ {r.rating}</span>
+                                            <span>•</span>
+                                            <span>{r.dynamicDeliveryTime || r.deliveryTime} mins</span>
+                                            {r.distance && <><span>•</span><span>{r.distance} km</span></>}
+                                        </div>
+                                        <p>{r.cuisines.slice(0, 3).join(', ')}</p>
                                     </div>
-                                    <h4>{r.name}</h4>
-                                    <div className="home__top-chain-meta">
-                                        <span className="home__top-chain-rating">★ {r.rating}</span>
-                                        <span>•</span>
-                                        <span>{r.dynamicDeliveryTime || r.deliveryTime} mins</span>
-                                        {r.distance && <><span>•</span><span>{r.distance} km</span></>}
-                                    </div>
-                                    <p>{r.cuisines.slice(0, 3).join(', ')}</p>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                )}
 
                 {/* Restaurants with Filters */}
-                <section className="home__restaurants">
-                    <h2>Restaurants with online food delivery in {location.city || 'your area'}</h2>
+                {!error && (
+                    <section className="home__restaurants">
+                        <h2>Restaurants with online food delivery in {location.city || 'your area'}</h2>
 
-                    <div className="home__filters">
-                        <div className="home__sort-group">
-                            <span className="home__sort-label">Sort By:</span>
-                            {sortOptions.map(opt => (
-                                <button key={opt.value}
-                                    className={`home__filter-chip ${activeSort === opt.value ? 'active' : ''}`}
-                                    onClick={() => setActiveSort(activeSort === opt.value ? '' : opt.value)}>
-                                    {opt.label}
-                                </button>
-                            ))}
+                        <div className="home__filters">
+                            <div className="home__sort-group">
+                                <span className="home__sort-label">Sort By:</span>
+                                {sortOptions.map(opt => (
+                                    <button key={opt.value}
+                                        className={`home__filter-chip ${activeSort === opt.value ? 'active' : ''}`}
+                                        onClick={() => setActiveSort(activeSort === opt.value ? '' : opt.value)}>
+                                        {opt.label}
+                                    </button>
+                                ))}
+                            </div>
+                            <div className="home__filter-group">
+                                {filterOptions.map(opt => (
+                                    <button key={opt.value}
+                                        className={`home__filter-chip ${activeFilters.includes(opt.value) ? 'active' : ''}`}
+                                        onClick={() => toggleFilter(opt.value)}>
+                                        {opt.label}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
-                        <div className="home__filter-group">
-                            {filterOptions.map(opt => (
-                                <button key={opt.value}
-                                    className={`home__filter-chip ${activeFilters.includes(opt.value) ? 'active' : ''}`}
-                                    onClick={() => toggleFilter(opt.value)}>
-                                    {opt.label}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
 
-                    {loading ? (
-                        <div className="home__loading">
-                            {[...Array(8)].map((_, i) => (
-                                <div key={i} className="home__skeleton-card">
-                                    <div className="home__skeleton-img shimmer" />
-                                    <div className="home__skeleton-text shimmer" />
-                                    <div className="home__skeleton-text home__skeleton-text--short shimmer" />
-                                </div>
-                            ))}
-                        </div>
-                    ) : (
-                        <div className="home__restaurant-grid">
-                            {filteredRestaurants.map(r => (
-                                <RestaurantCard key={r.id} restaurant={r} />
-                            ))}
-                        </div>
-                    )}
+                        {loading ? (
+                            <div className="home__loading">
+                                {[...Array(8)].map((_, i) => (
+                                    <div key={i} className="home__skeleton-card">
+                                        <div className="home__skeleton-img shimmer" />
+                                        <div className="home__skeleton-text shimmer" />
+                                        <div className="home__skeleton-text home__skeleton-text--short shimmer" />
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="home__restaurant-grid">
+                                {filteredRestaurants.map(r => (
+                                    <RestaurantCard key={r.id} restaurant={r} />
+                                ))}
+                            </div>
+                        )}
 
-                    {!loading && filteredRestaurants.length === 0 && (
-                        <div className="home__no-results">
-                            <h3>No restaurants found</h3>
-                            <p>Try adjusting your filters or changing your location</p>
-                            <button onClick={() => { setActiveFilters([]); setActiveSort(''); }}>Clear all filters</button>
-                        </div>
-                    )}
-                </section>
+                        {!loading && filteredRestaurants.length === 0 && (
+                            <div className="home__no-results">
+                                <h3>No restaurants found</h3>
+                                <p>Try adjusting your filters or changing your location</p>
+                                <button onClick={() => { setActiveFilters([]); setActiveSort(''); }}>Clear all filters</button>
+                            </div>
+                        )}
+                    </section>
+                )}
             </div>
         </div>
     );

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { FiMinus, FiPlus, FiTrash2, FiTag, FiX, FiArrowLeft } from 'react-icons/fi';
+import { FiMinus, FiPlus, FiTrash2, FiTag, FiX, FiArrowLeft, FiAlertCircle } from 'react-icons/fi';
 import { useCart } from '../../context/CartContext';
 import { useAuth } from '../../context/AuthContext';
+import { useLocation } from '../../context/LocationContext';
 import { placeOrder } from '../../utils/api';
 import './Cart.css';
 
@@ -17,8 +18,10 @@ export default function Cart() {
     const navigate = useNavigate();
     const { cart, addItem, removeItem, clearCart, applyCoupon, removeCoupon, getSubtotal, getDiscount } = useCart();
     const { user, openAuthModal } = useAuth();
+    const { location } = useLocation();
     const [showCoupons, setShowCoupons] = useState(false);
     const [placingOrder, setPlacingOrder] = useState(false);
+    const [orderError, setOrderError] = useState(null);
 
     const subtotal = getSubtotal();
     const discount = getDiscount();
@@ -26,16 +29,21 @@ export default function Cart() {
     const gst = Math.round((subtotal - discount) * 0.05);
     const total = subtotal - discount + deliveryFee + gst;
 
+    const deliveryAddress = location.address
+        ? `${location.address}`
+        : 'Home - 123, Example Street, Bangalore';
+
     const handlePlaceOrder = async () => {
         if (!user) { openAuthModal(); return; }
         setPlacingOrder(true);
+        setOrderError(null);
         try {
             const res = await placeOrder({
                 items: cart.items,
                 restaurantId: cart.restaurantId,
                 restaurantName: cart.restaurantName,
                 total,
-                address: 'Home - 123, Example Street, Bangalore',
+                address: deliveryAddress,
                 paymentMethod: 'COD'
             });
             if (res.success) {
@@ -44,6 +52,7 @@ export default function Cart() {
             }
         } catch (err) {
             console.error('Order failed:', err);
+            setOrderError(err.message || 'Failed to place order. Please try again.');
         }
         setPlacingOrder(false);
     };
@@ -155,8 +164,16 @@ export default function Cart() {
                         {/* Address & Checkout */}
                         <div className="cart-page__address">
                             <h4>Delivery Address</h4>
-                            <p>🏠 Home - 123, Example Street, Bangalore</p>
+                            <p>📍 {deliveryAddress}</p>
                         </div>
+
+                        {/* Order Error */}
+                        {orderError && (
+                            <div className="cart-page__order-error">
+                                <FiAlertCircle />
+                                <span>{orderError}</span>
+                            </div>
+                        )}
 
                         <button className="cart-page__checkout-btn" onClick={handlePlaceOrder} disabled={placingOrder}>
                             {placingOrder ? 'Placing Order...' : `PLACE ORDER  •  ₹${total}`}

@@ -1,19 +1,58 @@
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
-
-const app = express();
-const PORT = process.env.PORT || 3001;
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-// Routes
+const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 const restaurantRoutes = require('./routes/restaurants');
 const menuRoutes = require('./routes/menu');
 const authRoutes = require('./routes/auth');
 const orderRoutes = require('./routes/orders');
+const { calculateDeliveryTime } = require('./utils/deliveryCalculator');
+const restaurants = require('./data/restaurants.json');
+
+const app = express();
+const PORT = process.env.PORT || 8080;
+
+// ---------- SECURITY MIDDLEWARE ----------
+
+// HTTP security headers (XSS protection, content-type sniffing, etc.)
+app.use(helmet());
+
+// CORS — restrict to known origins
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:4173',
+  'http://127.0.0.1:5173'
+];
+
+// In production, allow all origins (App Runner domain)
+const isProduction = process.env.NODE_ENV === 'production' || process.env.PORT;
+app.use(cors({
+  origin: (origin, callback) => {
+    // In production, allow all origins; in dev, restrict to known origins
+    if (isProduction || !origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
+
+// Body parser with size limit to prevent payload flooding
+app.use(express.json({ limit: '10kb' }));
+
+// Global rate limiter — 100 requests per 15 minutes per IP
+const globalLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { success: false, message: 'Too many requests. Please try again later.' }
+});
+app.use(globalLimiter);
+
+// ---------- ROUTES ----------
 
 app.use('/api/restaurants', restaurantRoutes);
 app.use('/api/menu', menuRoutes);
@@ -22,118 +61,85 @@ app.use('/api/orders', orderRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Swiggy Clone API is running' });
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// ============================================================
-// SSE: Real-Time Live Updates for Restaurant Data
-// Simulates changes in availability, ratings, and delivery times
-// ============================================================
-const restaurants = require('./data/restaurants.json');
-let liveClients = [];
-
-app.get('/api/live-updates', (req, res) => {
-  // Set SSE headers
-  res.writeHead(200, {
-    'Content-Type': 'text/event-stream',
-    'Cache-Control': 'no-cache',
-    'Connection': 'keep-alive',
-    'Access-Control-Allow-Origin': '*'
-  });
-
-  // Send initial heartbeat
-  res.write('data: {"type":"connected","message":"Live updates connected"}\n\n');
-
-  // Track client
-  const clientId = Date.now();
-  const client = { id: clientId, res };
-  liveClients.push(client);
-  console.log(`📡 Live client connected: ${clientId} (Total: ${liveClients.length})`);
-
-  // Remove client on disconnect
-  req.on('close', () => {
-    liveClients = liveClients.filter(c => c.id !== clientId);
-    console.log(`📡 Live client disconnected: ${clientId} (Total: ${liveClients.length})`);
-  });
-});
-
-// Simulate live restaurant updates every 10 seconds
-setInterval(() => {
-  if (liveClients.length === 0) return;
-
-  // Pick 2-4 random restaurants to update
-  const numUpdates = 2 + Math.floor(Math.random() * 3);
-  const updates = [];
-
-  for (let i = 0; i < numUpdates; i++) {
-    const restaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
-
-    const update = {
-      id: restaurant.id,
-      name: restaurant.name
-    };
-
-    // Randomly decide what to update
-    const updateType = Math.random();
-    if (updateType < 0.3) {
-      // Rating fluctuation (+/- 0.1)
-      update.field = 'rating';
-      update.value = Math.round((restaurant.rating + (Math.random() * 0.2 - 0.1)) * 10) / 10;
-      update.value = Math.max(3.5, Math.min(5.0, update.value));
-    } else if (updateType < 0.6) {
-      // Delivery time change
-      update.field = 'deliveryTime';
-      const baseMin = parseInt(restaurant.deliveryTime.split('-')[0]);
-      const jitter = Math.floor(Math.random() * 10) - 5;
-      const newMin = Math.max(10, baseMin + jitter);
-      update.value = `${newMin}-${newMin + 10}`;
-    } else if (updateType < 0.8) {
-      // Availability toggle
-      update.field = 'isAvailable';
-      update.value = Math.random() > 0.15; // 85% chance available
-    } else {
-      // New offer
-      const offers = ['🔥 FLAT ₹50 OFF', '⚡ 30% OFF up to ₹75', '🎉 Free Delivery', '✨ Buy 1 Get 1'];
-      update.field = 'newOffer';
-      update.value = offers[Math.floor(Math.random() * offers.length)];
-    }
-
-    updates.push(update);
-  }
-
-  const payload = JSON.stringify({
-    type: 'restaurant_updates',
-    timestamp: new Date().toISOString(),
-    updates
-  });
-
-  liveClients.forEach(client => {
-    client.res.write(`data: ${payload}\n\n`);
-  });
-}, 10000);
-
-// ============================================================
-// Delivery Time Calculator API
-// ============================================================
-const { calculateDeliveryTime } = require('./utils/deliveryCalculator');
-
+// Delivery time calculator
 app.get('/api/delivery-time', (req, res) => {
   const { userLat, userLng, restLat, restLng } = req.query;
-  const uLat = parseFloat(userLat);
-  const uLng = parseFloat(userLng);
-  const rLat = parseFloat(restLat);
-  const rLng = parseFloat(restLng);
-
-  if (isNaN(uLat) || isNaN(uLng) || isNaN(rLat) || isNaN(rLng)) {
-    return res.status(400).json({ success: false, message: 'Invalid coordinates' });
+  if (!userLat || !userLng || !restLat || !restLng) {
+    return res.status(400).json({ success: false, message: 'Missing coordinates' });
   }
-
-  const result = calculateDeliveryTime(uLat, uLng, rLat, rLng);
+  const lat1 = parseFloat(userLat), lng1 = parseFloat(userLng);
+  const lat2 = parseFloat(restLat), lng2 = parseFloat(restLng);
+  if ([lat1, lng1, lat2, lng2].some(isNaN)) {
+    return res.status(400).json({ success: false, message: 'Coordinates must be valid numbers' });
+  }
+  const result = calculateDeliveryTime(lat1, lng1, lat2, lng2);
   res.json({ success: true, data: result });
 });
 
+// SSE: Live restaurant updates
+let clients = [];
+app.get('/api/live-updates', (req, res) => {
+  res.writeHead(200, {
+    'Content-Type': 'text/event-stream',
+    'Cache-Control': 'no-cache',
+    'Connection': 'keep-alive'
+  });
+
+  const clientId = Date.now();
+  clients.push({ id: clientId, res });
+
+  req.on('close', () => {
+    clients = clients.filter(c => c.id !== clientId);
+  });
+});
+
+// Simulate live updates
+setInterval(() => {
+  if (clients.length === 0) return;
+  const updates = [];
+  const fields = ['rating', 'deliveryTime', 'isAvailable', 'newOffer'];
+  const count = Math.floor(Math.random() * 3) + 1;
+  for (let i = 0; i < count; i++) {
+    const rest = restaurants[Math.floor(Math.random() * restaurants.length)];
+    const field = fields[Math.floor(Math.random() * fields.length)];
+    let value;
+    switch (field) {
+      case 'rating': value = (3.5 + Math.random() * 1.5).toFixed(1); break;
+      case 'deliveryTime': value = `${15 + Math.floor(Math.random() * 25)}-${30 + Math.floor(Math.random() * 20)}`; break;
+      case 'isAvailable': value = Math.random() > 0.2; break;
+      case 'newOffer': value = ['20% OFF up to ₹100', '₹75 OFF above ₹249', 'FREE delivery'][Math.floor(Math.random() * 3)]; break;
+    }
+    updates.push({ id: rest.id, field, value, timestamp: new Date().toISOString() });
+  }
+  const payload = JSON.stringify(updates);
+  clients.forEach(client => {
+    try { client.res.write(`data: ${payload}\n\n`); } catch (e) { }
+  });
+}, 15000);
+
+// ---------- SERVE STATIC FRONTEND ----------
+app.use(express.static(path.join(__dirname, '..', 'dist')));
+
+// SPA catch-all — serve index.html for client-side routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+});
+
+// ---------- GLOBAL ERROR HANDLER ----------
+app.use((err, req, res, _next) => {
+  console.error('Unhandled error:', err);
+  if (err.message === 'Not allowed by CORS') {
+    return res.status(403).json({ success: false, message: 'CORS: Origin not allowed' });
+  }
+  res.status(500).json({ success: false, message: 'Internal server error' });
+});
+
+// ---------- START ----------
 app.listen(PORT, () => {
-  console.log(`🚀 Swiggy Clone API Server running on http://localhost:${PORT}`);
-  console.log(`📡 SSE Live Updates: http://localhost:${PORT}/api/live-updates`);
-  console.log(`📍 Delivery Time: http://localhost:${PORT}/api/delivery-time?userLat=12.93&userLng=77.63&restLat=12.97&restLng=77.64`);
+  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Mode: ${isProduction ? 'PRODUCTION' : 'DEVELOPMENT'}`);
+  console.log(`CORS allowed origins: ${isProduction ? 'ALL' : allowedOrigins.join(', ')}`);
 });

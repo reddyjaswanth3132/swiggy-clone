@@ -63,6 +63,12 @@
     color: #FC8019;
 }
 
+.footer__link-placeholder {
+    font-size: 14px;
+    color: #686b78;
+    cursor: default;
+}
+
 .footer__bottom {
     display: flex;
     align-items: center;

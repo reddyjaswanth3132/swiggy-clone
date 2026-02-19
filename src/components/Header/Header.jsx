@@ -152,9 +152,6 @@ export default function Header() {
                     <Link to="/search" className="header__nav-item" onClick={() => setMobileMenuOpen(false)}>
                         <FiSearch /> <span>Search</span>
                     </Link>
-                    <Link to="/offers" className="header__nav-item" onClick={() => setMobileMenuOpen(false)}>
-                        <FiPercent /> <span>Offers</span>
-                    </Link>
                     <Link to="/help" className="header__nav-item" onClick={() => setMobileMenuOpen(false)}>
                         <FiHelpCircle /> <span>Help</span>
                     </Link>

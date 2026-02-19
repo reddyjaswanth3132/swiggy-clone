@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FiStar, FiClock, FiMapPin, FiChevronDown, FiChevronUp, FiSearch, FiNavigation } from 'react-icons/fi';
+import { FiStar, FiClock, FiMapPin, FiChevronDown, FiChevronUp, FiSearch, FiNavigation, FiAlertCircle } from 'react-icons/fi';
 import { fetchRestaurantById, fetchMenu, getDishImage } from '../../utils/api';
 import { useCart } from '../../context/CartContext';
 import { useLocation } from '../../context/LocationContext';
@@ -14,6 +14,7 @@ export default function Restaurant() {
     const [restaurant, setRestaurantData] = useState(null);
     const [menu, setMenu] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
     const [expandedCategories, setExpandedCategories] = useState({});
     const [vegOnly, setVegOnly] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
@@ -26,6 +27,7 @@ export default function Restaurant() {
 
     const loadData = async () => {
         setLoading(true);
+        setError(null);
         try {
             const locationParams = {};
             if (location.latitude) {
@@ -45,6 +47,7 @@ export default function Restaurant() {
             }
         } catch (err) {
             console.error('Failed to load restaurant:', err);
+            setError(err.message || 'Failed to load restaurant. Please try again.');
         }
         setLoading(false);
     };
@@ -86,6 +89,24 @@ export default function Restaurant() {
                         <div className="shimmer" style={{ height: 200, borderRadius: 16 }} />
                         <div className="shimmer" style={{ height: 30, width: '60%', marginTop: 20, borderRadius: 8 }} />
                         <div className="shimmer" style={{ height: 20, width: '40%', marginTop: 12, borderRadius: 8 }} />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div className="restaurant-page">
+                <div className="restaurant-page__container">
+                    <div className="restaurant-page__error">
+                        <FiAlertCircle size={32} />
+                        <h2>Something went wrong</h2>
+                        <p>{error}</p>
+                        <div className="restaurant-page__error-actions">
+                            <button onClick={loadData}>Try Again</button>
+                            <button onClick={() => navigate('/')}>Go Home</button>
+                        </div>
                     </div>
                 </div>
             </div>
