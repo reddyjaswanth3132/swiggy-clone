@@ -15,8 +15,19 @@ const PORT = process.env.PORT || 8080;
 
 // ---------- SECURITY MIDDLEWARE ----------
 
-// HTTP security headers (XSS protection, content-type sniffing, etc.)
-app.use(helmet());
+// HTTP security headers — relaxed CSP to allow external images & inline styles
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+      fontSrc: ["'self'", "https://fonts.gstatic.com"],
+      imgSrc: ["'self'", "data:", "https://images.unsplash.com", "https://*.unsplash.com", "https://source.unsplash.com", "https://plus.unsplash.com", "blob:"],
+      connectSrc: ["'self'"],
+    },
+  },
+}));
 
 // CORS — restrict to known origins
 const allowedOrigins = [
